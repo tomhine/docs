@@ -15,7 +15,7 @@ experimental: true
 
 ## Overview
 
-Antlers is one Statamic's foundational features. It consists of a tightly coupled template language, runtime engine, and library of [Tags](#tags) that can be used to fetch and manipulate data, handle logic, and help you write easier to maintain HTML.
+Antlers is one of Statamic's foundational features. It consists of a tightly coupled template language, runtime engine, and library of [Tags](#tags) that can be used to fetch and manipulate data, handle logic, and help you write easier to maintain HTML.
 
 Antlers templates are also called views. Any files in the `resources/views` directory with an `.antlers.html` file extension is an "Antlers Template", and will be parsed with the Antlers Engine.
 
@@ -36,7 +36,7 @@ This is a very simple Antlers tag:
 :::tip DON'T SKIP THIS!
 ## About the New Antlers Engine {#about}
 
-Not only this new Antlers Engine a complete and fundamental rewrite, but it takes a completely different, more sophisticated approach to the business of template parsing.
+Not only is this new Antlers Engine a complete and fundamental rewrite, but it takes a completely different, more sophisticated approach to the business of template parsing.
 
 The original parser was essentially a glorified find and replace machine relying heavily on RegEx. It parsed and evaluated logic as it worked its way through the template. This means it couldn't stop, go backwards, set variables, or handle nested logic well because it had to keep moving forward. It also slowed down the larger the template got because of the amount of characters being pushed through the RegEx.
 
@@ -162,7 +162,7 @@ The `title` variable can be rendered like this:
 
 ### Valid Characters
 
-Variable must start with an alpha character or underscore (`a-zA-Z_`), followed by any number of additional uppercase or lowercase alphanumeric characters, hyphens, or underscores (`a-zA-Z_0-9`). Spaces or other special characters are not allowed.
+Variables must start with an alpha character or underscore (`a-zA-Z_`), followed by any number of additional uppercase or lowercase alphanumeric characters, hyphens, or underscores (`a-zA-Z_0-9`). Spaces or other special characters are not allowed.
 
 Don't be weird and mix-and-match them like a serial killer though:
 
